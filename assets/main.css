@@ -5,6 +5,10 @@ html, body {
 
 /* https://davidwalsh.name/css-flip */
 
+.flip-containers {
+    text-align: center;
+}
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
@@ -48,5 +52,16 @@ html, body {
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    background: black;
+    background: grey;
+}
+
+@media screen and (max-width: 900px){
+    .flip-container {
+        width: 47%;
+    }
+}
+@media screen and (max-width: 600px){
+    .flip-container {
+        width: 98%;
+    }
 }
